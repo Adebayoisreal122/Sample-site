@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    // "./index.html",
-    // "./src/**/*.{js,ts,jsx,tsx}",
-    // "./node_modules/tw-elements/dist/js/**/*.js",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+    './components/Wellcome',
+    '.src/App.jsx'
   ],
   theme: {
     extend: {},
@@ -12,7 +14,10 @@ export default {
   darkMode: 'class',
   // ...
 
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }
 
 
